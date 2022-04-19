@@ -1,0 +1,53 @@
+{
+    "name": "markdown-playground",
+    "version": "1.0.0",
+    "description": "A Markdown Playground 🏏",
+    "main": "index.js",
+    "scripts": {
+        "prepare": "husky install",
+        "commit": "git-cz",
+        "pretty:fix": "prettier --write .",
+        "doctoc": "doctoc Playground.md",
+        "contrib:add": "all-contributors add",
+        "contrib:generate": "all-contributors generate",
+        "contrib:check": "all-contributors check"
+    },
+    "keywords": [
+        "markdown",
+        "playground"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Norgate-AV-Solutions-Ltd/markdown-playground.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Norgate-AV-Solutions-Ltd/markdown-playground/issues"
+    },
+    "license": "MIT",
+    "engines": {
+        "node": ">=14"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^16.2.3",
+        "@commitlint/config-conventional": "^16.2.1",
+        "all-contributors-cli": "^6.20.0",
+        "cz-conventional-changelog": "3.3.0",
+        "doctoc": "^2.1.0",
+        "husky": "^7.0.4",
+        "lint-staged": "^12.3.8",
+        "prettier": "^2.6.0"
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx}": [
+            "yarn pretty:fix"
+        ],
+        "*.{css,scss,md,html,json,yml,yaml}": [
+            "yarn pretty:fix"
+        ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
+}

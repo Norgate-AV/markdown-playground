@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "editorconfig.editorconfig",
+        "bierner.github-markdown-preview",
+        "esbenp.prettier-vscode",
+        "ms-vsliveshare.vsliveshare-pack",
+        "tyriar.luna-paint",
+        "lostintangent.vsls-whiteboard",
+        "bierner.emojisense",
+        "streetsidesoftware.code-spell-checker",
+        "vivaxy.vscode-conventional-commits"
+    ]
+}
